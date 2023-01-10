@@ -24,7 +24,7 @@ Array.from(buttons).forEach((button)=>{
             else if(e.target.innerHTML == '^'){
                 string += '**';
             }
-            else if(e.target.innerHTML == 'X'){
+            else if(e.target.innerHTML == 'x'){
                 string += '*';
             }
             else{
@@ -35,7 +35,4 @@ Array.from(buttons).forEach((button)=>{
     })
 
 });
-
-
-// prompt("What !")
 
