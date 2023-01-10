@@ -1,3 +1,4 @@
+
 let string = "";
 
 let buttons = document.querySelectorAll('.b1');
@@ -11,7 +12,7 @@ Array.from(buttons).forEach((button)=>{
             string = "";
             document.querySelector('input').value = string;
         }
-        else if(e.target.innerHTML == 'x'){
+        else if(e.target.innerHTML == 'C'){
             string = string.slice(0, -1);
             document.querySelector('input').value = string;
         }
@@ -22,6 +23,9 @@ Array.from(buttons).forEach((button)=>{
             }
             else if(e.target.innerHTML == '^'){
                 string += '**';
+            }
+            else if(e.target.innerHTML == 'X'){
+                string += '*';
             }
             else{
                 string = string + e.target.innerHTML;
@@ -34,3 +38,4 @@ Array.from(buttons).forEach((button)=>{
 
 
 // prompt("What !")
+
